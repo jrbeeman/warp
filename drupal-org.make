@@ -25,10 +25,7 @@ projects[fcgen][download][branch] = master
 ; Migrate
 projects[migrate][type] = module
 projects[migrate][subdir] = contrib
-projects[migrate][download][type] = git
-projects[migrate][download][url] = http://git.drupal.org/project/migrate.git
-projects[migrate][download][branch] = 7.x-2.x
-projects[migrate][download][revision] = 0010411
+projects[migrate][version] = 2.x-dev
 
 ; User stats
 projects[user_stats][type] = module
