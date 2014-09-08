@@ -59,13 +59,3 @@ projects[shiny][version] = 1.6
 projects[basic][type] = theme
 projects[basic][subdir] = contrib
 projects[basic][version] = 4.0-beta3
-
-; Bootstrap
-projects[bootstrap][type] = theme
-projects[bootstrap][subdir] = contrib
-projects[bootstrap][version] = 3.0
-
-; Bootstrap Library
-projects[bootstrap_library][type] = module
-projects[bootstrap_library][subdir] = contrib
-projects[bootstrap_library][version] = 1.4

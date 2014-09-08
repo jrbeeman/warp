@@ -67,6 +67,10 @@ function warp_install() {
     // Cache a fully-built schema.
     drupal_get_schema(NULL, TRUE);
 
+    // Rebuild entity index.
+    module_load_include('install', 'entity_index');
+    _entity_index_rebuild_schema();
+
     // Run cron to populate update status tables (if available) so that users
     // will be warned if they've installed an out of date Drupal version.
     // Will also trigger indexing of profile-supplied content or feeds.
