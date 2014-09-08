@@ -42,8 +42,8 @@ projects[devel][type] = module
 projects[devel][version] = 1.5
 
 ; XHProf
-projects[XHProf][type] = module
-projects[XHProf][version] = 1.0-beta3
+projects[xhprof][type] = module
+projects[xhprof][version] = 1.0-beta3
 
 
 ; Shiny
