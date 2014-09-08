@@ -36,3 +36,28 @@ projects[user_stats][download][branch] = 7.x-2.x
 ; Composer manager
 projects[composer_manager][type] = module
 projects[composer_manager][version] = 1.6
+
+; Devel
+projects[devel][type] = module
+projects[devel][version] = 1.5
+
+; XHProf
+projects[XHProf][type] = module
+projects[XHProf][version] = 1.0-beta3
+
+
+; Shiny
+projects[shiny][type] = theme
+projects[shiny][version] = 1.6
+
+; Basic
+projects[basic][type] = theme
+projects[basic][version] = 4.0-beta3
+
+; Bootstrap
+projects[bootstrap][type] = theme
+projects[bootstrap][version] = 3.0
+
+; Bootstrap Library
+projects[bootstrap_library][type] = module
+projects[bootstrap_library][version] = 1.4
