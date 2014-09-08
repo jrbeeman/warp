@@ -55,7 +55,7 @@ projects[devel][version] = 1.5
 
 ; Shiny
 projects[shiny][type] = theme
-projects[basic][subdir] = contrib
+projects[shiny][subdir] = contrib
 projects[shiny][version] = 1.6
 
 ; Basic

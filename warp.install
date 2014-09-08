@@ -1,0 +1,74 @@
+<?php
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ */
+function warp_install() {
+    // Allow visitor account creation without administrative approval.
+    variable_set('user_register', USER_REGISTER_VISITORS);
+
+    // Enable and set the admin theme.
+    variable_set('admin_theme', WARP_ADMIN_THEME);
+    variable_set('node_admin_theme', TRUE);
+
+    // Enable and set the site theme.
+    theme_enable(array(WARP_THEME));
+    variable_set('theme_default', WARP_THEME);
+
+    // Disable default theme.
+    theme_disable(array('bartik'));
+
+    // Setup some basic variables.
+    //
+    // Performance
+    variable_set('cache', TRUE); // Cache pages
+    variable_set('cache_lifetime', 300); // 5 minutes
+    variable_set('page_cache_maximum_age', 0);
+    //variable_set('preprocess_css', TRUE);
+    //variable_set('preprocess_js', TRUE);
+    variable_set('preprocess_level', 0);
+    variable_set('error_level', 0);
+    variable_set('dblog_row_limit', 1000);
+
+    // Locale and time
+    variable_set('site_default_country', 'US');
+    variable_set('date_default_timezone', 'America/New_York');
+    variable_set('configurable_timezones', TRUE);
+    variable_set('empty_timezone_message', 0);
+    variable_set('user_default_timezone', 0);
+
+    // Cron: We assume you'll run cron via actual cron or an external service.
+    variable_set('cron_safe_threshold', '0');
+
+    // Misc. user settings
+    variable_set('user_pictures', TRUE);
+
+    // Set the forum vocabulary
+    $vocab = taxonomy_vocabulary_machine_name_load('forums');
+    variable_set('forum_nav_vocabulary', $vocab->vid);
+
+    // Flush all caches to ensure that any full bootstraps during the installer
+    // do not leave stale cached data, and that any content types or other items
+    // registered by the installation profile are registered correctly.
+    drupal_flush_all_caches();
+
+    // Remember the profile which was used.
+    variable_set('install_profile', drupal_get_profile());
+
+    // Installation profiles are always loaded last
+    db_update('system')
+        ->fields(array('weight' => 1000))
+        ->condition('type', 'module')
+        ->condition('name', drupal_get_profile())
+        ->execute();
+
+    // Cache a fully-built schema.
+    drupal_get_schema(NULL, TRUE);
+
+    // Run cron to populate update status tables (if available) so that users
+    // will be warned if they've installed an out of date Drupal version.
+    // Will also trigger indexing of profile-supplied content or feeds.
+    drupal_cron_run();
+}

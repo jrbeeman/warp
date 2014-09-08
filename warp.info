@@ -1,0 +1,20 @@
+name = Warp
+description = Warp: Entity index testing distribution.
+version = 7.x-1.x
+core = 7.x
+
+files[] = warp.profile
+files[] = warp.install
+
+; Core
+dependencies[] = block
+dependencies[] = dblog
+dependencies[] = menu
+dependencies[] = shortcut
+dependencies[] = toolbar
+dependencies[] = tracker
+dependencies[] = forum
+
+; Contrib dependencies
+dependencies[] = user_stats
+dependencies[] = devel
