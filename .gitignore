@@ -1,3 +1,4 @@
 scripts/*-local.sh
-modules/*
-themes/*
+modules/contrib/*
+modules/custom/*
+themes/contrib/*
