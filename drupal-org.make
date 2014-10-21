@@ -37,7 +37,7 @@ projects[user_stats][download][branch] = 7.x-2.x
 ; Composer manager
 projects[composer_manager][type] = module
 projects[composer_manager][subdir] = contrib
-projects[composer_manager][version] = 1.6
+projects[composer_manager][version] = 1.7
 
 ; Devel
 projects[devel][type] = module
@@ -58,4 +58,4 @@ projects[shiny][version] = 1.6
 ; Basic
 projects[basic][type] = theme
 projects[basic][subdir] = contrib
-projects[basic][version] = 4.0-beta3
+projects[basic][version] = 4.1

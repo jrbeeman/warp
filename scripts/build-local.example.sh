@@ -35,5 +35,6 @@ git remote add upstream jrbeeman@git.drupal.org:sandbox/jrbeeman/2314257.git;
 drush @loc.warp si -yv warp --site-name="Warp (local)" --db-url="mysql://drupaluser:@127.0.0.1:33067/warp";
 
 # Enable developer tools.
+# https://www.drupal.org/node/1665688
 drush @loc.warp dl xhprof;
 drush @loc.warp en xhprof -y;
