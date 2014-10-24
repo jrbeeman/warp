@@ -1,6 +1,20 @@
 api = 2
 core = 7.x
 
+;
+; Modules
+;
+
+; Composer manager
+projects[composer_manager][type] = module
+projects[composer_manager][subdir] = contrib
+projects[composer_manager][version] = 1.7
+
+; Devel
+projects[devel][type] = module
+projects[devel][subdir] = contrib
+projects[devel][version] = 1.5
+
 ; Entity index
 projects[entity_index][type] = module
 projects[entity_index][subdir] = custom
@@ -34,21 +48,14 @@ projects[user_stats][download][type] = git
 projects[user_stats][download][url] = http://git.drupal.org/sandbox/jrbeeman/2314257.git
 projects[user_stats][download][branch] = 7.x-2.x
 
-; Composer manager
-projects[composer_manager][type] = module
-projects[composer_manager][subdir] = contrib
-projects[composer_manager][version] = 1.7
-
-; Devel
-projects[devel][type] = module
-projects[devel][subdir] = contrib
-projects[devel][version] = 1.5
-
 ; XHProf
-; Can't add this via make file: https://www.drupal.org/node/1665688
-;projects[XHProf][type] = module
-;projects[XHProf][version] = 1.0-beta3
+projects[xhprof][type] = module
+projects[xhprof][subdir] = contrib
+projects[xhprof][version] = 1.0-beta3
 
+;
+; Themes
+;
 
 ; Shiny
 projects[shiny][type] = theme
