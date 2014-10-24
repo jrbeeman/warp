@@ -17,4 +17,10 @@ dependencies[] = forum
 
 ; Contrib dependencies
 dependencies[] = user_stats
+
+; Content generation
+dependencies[] = fcgen_example
+
+; Debugging and profiling
 dependencies[] = devel
+dependencies[] = xhprof
