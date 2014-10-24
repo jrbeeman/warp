@@ -33,3 +33,6 @@ git remote add upstream jrbeeman@git.drupal.org:sandbox/jrbeeman/2314257.git;
 # Reinstall the site.
 #
 drush @loc.warp si -yv warp --site-name="Warp (local)" --db-url="mysql://drupaluser:@127.0.0.1:33067/warp";
+
+# Enable fcgen. Do this here so we can get Composer Manager to install dependencies.
+drush en -y fcgen_example;
