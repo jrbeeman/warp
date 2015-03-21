@@ -27,7 +27,7 @@ projects[fast_forum][type] = module
 projects[fast_forum][subdir] = custom
 projects[fast_forum][download][type] = git
 projects[fast_forum][download][url] = http://git.drupal.org/sandbox/jrbeeman/2073961.git
-projects[fast_forum][download][branch] = entity_index
+projects[fast_forum][download][branch] = 7.x-2.x
 
 ; FCGen
 projects[fcgen][type] = module
@@ -39,7 +39,7 @@ projects[fcgen][download][branch] = master
 ; Migrate
 projects[migrate][type] = module
 projects[migrate][subdir] = contrib
-projects[migrate][version] = 2.x-dev
+projects[migrate][version] = 2.7
 
 ; User stats
 projects[user_stats][type] = module
