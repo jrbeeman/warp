@@ -1,0 +1,9 @@
+name = Warp: FCGen content generator
+description = Generate test content.
+core = 7.x
+package = Migration
+
+dependencies[] = fcgen
+dependencies[] = forum
+
+files[] = includes/forum.inc
