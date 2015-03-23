@@ -33,7 +33,7 @@ projects[fast_forum][download][branch] = 7.x-2.x
 projects[fcgen][type] = module
 projects[fcgen][subdir] = custom
 projects[fcgen][download][type] = git
-projects[fcgen][download][url] = http://git.drupal.org/sandbox/cthos/2345709.git
+projects[fcgen][download][url] = https://github.com/cthos/fcgen.git
 projects[fcgen][download][branch] = master
 
 ; Migrate
