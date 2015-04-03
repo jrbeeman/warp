@@ -2,7 +2,7 @@
 
 drush use @loc.warp;
 
-drush mi FCGenUser;
-drush mi FCGenForumTerm;
-drush mi FCGenForum --feedback="100 items";
-drush mi FCGenForumPost --feedback="500 items";
+drush mi WarpUser;
+drush mi WarpForumTerm;
+drush mi WarpForum --feedback="100 items";
+drush mi WarpForumPost --feedback="500 items";
