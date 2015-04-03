@@ -63,6 +63,11 @@ projects[shiny][subdir] = contrib
 projects[shiny][version] = 1.6
 
 ; Basic
-projects[basic][type] = theme
-projects[basic][subdir] = contrib
-projects[basic][version] = 4.1
+projects[boron][type] = theme
+projects[boron][subdir] = contrib
+projects[boron][version] = 1.x-dev
+
+; MM - Minimalist Theme
+projects[mm][type] = theme
+projects[mm][subdir] = contrib
+projects[mm][version] = 1.0
